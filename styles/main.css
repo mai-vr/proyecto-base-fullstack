@@ -8,6 +8,7 @@
 :root{  /*Paleta de colores con los que trabajaré.*/
     --primary-color: #0a9c6f;
     --grey-900: #0d1919;
+    --grey-800: rgb(27, 27, 27);
     --grey-700: #1f2c34;
     --grey-300: #fefff6;
     --grey-200: #f1f2f6;
@@ -16,4 +17,72 @@
     --green-100: #dcf8c6;
 
     --primary-font: "Roboto", sans-serif;
+}
+
+body{
+    background-color: var(--primary-color);
+    padding: 20px;
+}
+
+.app{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside{
+    background-color: var(--grey-900);
+    color: rgb(235, 232, 232);
+}
+
+aside header{
+    background-color: var(--grey-800);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile h2{
+    font-size: 20px;
+}
+
+.actions{
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+.actions button{
+    padding: 7px;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: var(--grey-800);
+    color: var(--grey-300);
+    transition: transform .2s;
+}
+
+.actions button svg{
+    width: 20px;
+}
+
+.actions button:hover{
+    background-color: var(--grey-700);
+    transform: translateY(-4px);
 }
