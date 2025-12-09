@@ -7,6 +7,104 @@
     <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+   <section class="app">    <!--Todo va a estar contenido aquí, como hay contenido dinámico, será section.-->
+        <aside>
+            <header>
+                <div class="profile">
+                    <img src="foto.png" alt="logo o foto de perfil">
+                    <h2>Maite Reynoso</h2>
+                </div>
+                <div class="actions">   <!--Para reorganizar elementos horizontalmente necesito agruparlos en un div.-->
+                    <button>    <!--No son links por que no redireccionan, llaman a funciones de la página.-->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 24 24"><path fill="currentColor" d="M12 9c-1.626 0-3 1.374-3 3s1.374 3 3 3s3-1.374 3-3s-1.374-3-3-3"/><path fill="currentColor" d="M20 5h-2.586l-2.707-2.707A1 1 0 0 0 14 2h-4a1 1 0 0 0-.707.293L6.586 5H4c-1.103 0-2 .897-2 2v11c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V7c0-1.103-.897-2-2-2m-8 12c-2.71 0-5-2.29-5-5s2.29-5 5-5s5 2.29 5 5s-2.29 5-5 5"/></svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 20 20"><path fill="currentColor" d="M0 4c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm11 9l-3-3l-6 6h16l-5-5zm4-4a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/></svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 20 20"><path fill="currentColor" d="M11.078 0c.294 0 .557.183.656.457l.706 1.957q.379.094.654.192q.3.107.78.33l1.644-.87a.7.7 0 0 1 .832.131l1.446 1.495c.192.199.246.49.138.744l-.771 1.807q.191.352.308.604q.126.273.312.76l1.797.77c.27.115.437.385.419.674l-.132 2.075a.69.69 0 0 1-.46.605l-1.702.605q-.073.352-.154.606a9 9 0 0 1-.298.774l.855 1.89a.68.68 0 0 1-.168.793l-1.626 1.452a.7.7 0 0 1-.796.096l-1.676-.888a7 7 0 0 1-.81.367l-.732.274l-.65 1.8a.7.7 0 0 1-.64.457L9.11 20a.7.7 0 0 1-.669-.447l-.766-2.027a15 15 0 0 1-.776-.29a10 10 0 0 1-.618-.293l-1.9.812a.7.7 0 0 1-.755-.133L2.22 16.303a.68.68 0 0 1-.155-.783l.817-1.78a10 10 0 0 1-.302-.644a14 14 0 0 1-.3-.811L.49 11.74a.69.69 0 0 1-.49-.683l.07-1.921a.69.69 0 0 1 .392-.594L2.34 7.64q.13-.478.23-.748a9 9 0 0 1 .314-.712L2.07 4.46a.68.68 0 0 1 .15-.79l1.404-1.326a.7.7 0 0 1 .75-.138l1.898.784q.314-.209.572-.344q.307-.162.824-.346l.66-1.841A.7.7 0 0 1 8.984 0zm-1.054 7.019c-1.667 0-3.018 1.335-3.018 2.983s1.351 2.984 3.018 2.984s3.017-1.336 3.017-2.984s-1.35-2.983-3.017-2.983"/></svg>
+                    </button>
+                </div>
+            </header>
+            <div class="search">
+                <form>    <!--Incluir el input dentro del form hace que cargue el sumbit, lo q se envía.-->
+                    <input type="search" placeholder="Busca un chat o iniciar uno nuevo">
+                </form>
+            </div>
+            <section class="chats">
+                <ul>
+                    <li>
+                        <img src="https://placehold.co/100x100" alt="">
+                        <div>
+                            <h3>Maria Sandoval</h3>
+                            <p>¿Nos vemos a las 18:00?</p> 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://placehold.co/100x100" alt="">
+                        <div>
+                            <h3>Maria Sandoval</h3>
+                            <p>¿Nos vemos a las 18:00?</p> 
+                        </div>
+                    </li>
+                    <li>
+                        <img src="https://placehold.co/100x100" alt="">
+                        <div>
+                            <h3>Maria Sandoval</h3>
+                            <p>¿Nos vemos a las 18:00?</p> 
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <div class="chat-panel">   <!--Podría ser un article, section o div.-->
+            <header class="chat-header">
+                <img src="https://placehold.co/100x100" alt="">
+                <div>
+                    <h3>Maria Sandoval</h3>
+                    <p>En línea</p>
+                </div>
+            </header>
+            <section class="messages">
+                <div class="message you">   <!--Cada mensaje será un div-->
+                    <!--Un div con dos clases: la clase mensaje estila a todos de una forma 'base'. 
+                    Luego, según quién lo haya enviado va a tener un color de fondo diferente.-->
+                    <p class="content">
+                        Hola! Queres venir por un café?
+                    </p>
+                    <p class="time">
+                        14:15
+                    </p>
+                </div>
+                <div class="message me">   
+                    <p class="content">
+                        Si, perfecto!🎉
+                    </p>
+                    <p class="time">
+                        14:20
+                    </p>
+                </div>
+                <div class="message you">   
+                    <p class="content">
+                        Dale, en la plaza entonces😊
+                    </p>
+                    <p class="time">
+                        14:25
+                    </p>
+                </div>
+            </section>
+            <footer>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701"><path fill="currentColor" d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129"/></svg>
+                </button>
+                <form>
+                    <input type="text" placeholder="Escribe un mensaje">
+                </form>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M43 5L29.7 43l-7.6-17.1L5 18.3z"/><path stroke-linecap="round" d="M43 5L22.1 25.9"/></g></svg>
+                </button>
+            </footer>
+        </div>
+   </section> 
 </body>
 </html>
