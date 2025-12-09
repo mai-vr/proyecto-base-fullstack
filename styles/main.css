@@ -1,5 +1,16 @@
-*{
+*{          /*Todo maneja un espaciado por defecto, con este reset lo puedo controlar yo.*/
     margin: 0;
-    padding:0;
+    padding:0;  
     box-sizing: border-box;
+}
+
+:root{  /*Paleta de colores con los que trabajaré.*/
+    --primary-color: rgb(10, 156, 111);
+    --grey-900: rgb(0, 0, 0);
+    --grey-700: rgb(56, 56, 56);
+    --grey-300: grey;
+    --grey-200: rgb(225, 222, 222);
+    --green-400: rgb(11, 157, 11);
+    --green-300: rgb(50, 236, 50);
+    --green-100: rgb(172, 193, 173);
 }
