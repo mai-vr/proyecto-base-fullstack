@@ -86,3 +86,51 @@ aside header{
     background-color: var(--grey-700);
     transform: translateY(-4px);
 }
+
+.search{
+    background-color: var(--grey-800);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search form input{
+    background-color: var(--grey-700);
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: white;
+}
+
+.search input:focus{
+    outline: 1px solid var(--grey-300);
+}
+
+.chats ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-chat{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-chat img{
+    border-radius: 50%;
+    width: 80px;
+}
+
+.user-chat:hover{
+    background-color: var(--grey-700);
+    cursor: pointer;
+    border-left: 3px solid var(--green-300);
+}
