@@ -30,7 +30,7 @@ body{
     background-color: white;
     display: grid;
     grid-template-columns: 320px 1fr;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
@@ -97,7 +97,7 @@ aside header{
 }
 
 .search form input{
-    background-color: var(--grey-700);
+    background-color: var(--grey-600);
     width: 100%;
     display: block;
     border: none;
@@ -132,7 +132,7 @@ aside header{
 }
 
 .user-chat:hover{
-    background-color: var(--grey-700);
+    background-color: var(--grey-800);
     cursor: pointer;
     border-left: 3px solid var(--green-300);
 }
@@ -169,7 +169,7 @@ aside header{
     display: flex;
     flex-direction: column;
     gap: 10px;  /* Separar entre elementos flexibles.*/
-    overflow: scroll;
+    overflow-y: auto;
 }
 
 .message{
@@ -267,7 +267,7 @@ footer .send:hover{
     .app{
         grid-template-columns: 1fr;
     }
-    
+
     aside{
         display: none;
     }
