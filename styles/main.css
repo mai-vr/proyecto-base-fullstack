@@ -21,7 +21,7 @@
 
 body{
     background-color: var(--primary-color);
-    padding: 20px;
+    padding: 40px;
 }
 
 .app{
@@ -71,7 +71,7 @@ aside header{
 .actions button{
     padding: 7px;
     border: none;
-    border-radius: 10%;
+    border-radius: 8px;
     cursor: pointer;
     background-color: var(--grey-800);
     color: var(--grey-300);
@@ -90,9 +90,6 @@ aside header{
 .search{
     background-color: var(--grey-800);
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .search form input{
@@ -118,6 +115,7 @@ aside header{
 }
 
 .user-chat{
+    background-color: var(--grey-900);
     display: flex;
     padding: 10px;
     align-items: center;
@@ -126,7 +124,7 @@ aside header{
 
 .user-chat img{
     border-radius: 50%;
-    width: 80px;
+    width: 50px;
 }
 
 .user-chat:hover{
