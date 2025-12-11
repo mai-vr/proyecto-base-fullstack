@@ -8,8 +8,10 @@
 :root{  /*Paleta de colores con los que trabajaré.*/
     --primary-color: #0a9c6f;
     --grey-900: #0d1919;
-    --grey-800: rgb(27, 27, 27);
-    --grey-700: #1f2c34;
+    --grey-800: #121b22;
+    --grey-600: #1f2c34;
+    --grey-700: #9f9fa1;
+    --grey-500: #dfdfe1;
     --grey-300: #fefff6;
     --grey-200: #f1f2f6;
     --green-400: #138b80;
@@ -30,6 +32,8 @@ body{
     grid-template-columns: 320px 1fr;
     height: 100vh;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
 aside{
@@ -59,7 +63,7 @@ aside header{
 }
 
 .profile h2{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .actions{
@@ -131,4 +135,93 @@ aside header{
     background-color: var(--grey-700);
     cursor: pointer;
     border-left: 3px solid var(--green-300);
+}
+
+/* Messages panel */
+.chat-header{
+    background-color: var(--grey-300);
+    border-bottom: 1px solid var(--grey-600);
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-header img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.chat-header p{
+    color: var(--grey-700);
+}
+
+/* Estilos mensajes */
+
+footer{
+    display: flex;
+    background-color: var(--grey-500);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
+}
+
+footer button{
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+}
+
+footer svg{
+    width: 100%;
+    height: 100%;
+}
+
+footer .attach{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--grey-700);
+    transition: color .2s;
+}
+
+footer .attach:hover{
+    color: var(--grey-800);
+}
+
+footer form{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+footer input{
+    padding: 8px;
+    resize: none;
+    border-radius: 15px;
+    width: 100%;
+    border: none;
+}
+
+footer input:focus{
+    outline: 1px solid var(--grey-700);
+    border: none;
+}
+
+footer .send{
+    background-color: var(--green-400);
+    border: none;
+    color: var(--grey-300);
+    width: 45px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all .1s;
+}
+
+footer .send:hover{
+    background-color: var(--green-300);
+    transform: scale(1.1);
 }
