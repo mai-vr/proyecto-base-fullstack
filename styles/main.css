@@ -193,7 +193,7 @@ aside header{
 }
 
 /* Footer styles */
-footer{
+footer .container-pc-message{
     display: flex;
     background-color: var(--grey-500);
     align-items: center;
@@ -202,18 +202,18 @@ footer{
     gap: 20px;
 }
 
-footer button{
+footer .container-pc-message button{
     width: 25px;
     height: 25px;
     padding: 3px;
 }
 
-footer svg{
+footer .container-pc-message svg{
     width: 100%;
     height: 100%;
 }
 
-footer .attach{
+footer .container-pc-message .attach{
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -221,17 +221,17 @@ footer .attach{
     transition: color .2s;
 }
 
-footer .attach:hover{
+footer .container-pc-message .attach:hover{
     color: var(--grey-800);
 }
 
-footer form{
+footer .container-pc-message form{
     display: flex;
     align-items: center;
     flex: 1;
 }
 
-footer input{
+footer .container-pc-message input{
     padding: 8px;
     resize: none;
     border-radius: 15px;
@@ -239,12 +239,12 @@ footer input{
     border: none;
 }
 
-footer input:focus{
+footer .container-pc-message input:focus{
     outline: 1px solid var(--grey-700);
     border: none;
 }
 
-footer .send{
+footer .container-pc-message .send{
     background-color: var(--green-400);
     border: none;
     color: var(--grey-300);
@@ -256,9 +256,13 @@ footer .send{
     transition: all .1s;
 }
 
-footer .send:hover{
+footer .container-pc-message .send:hover{
     background-color: var(--green-300);
     transform: scale(1.1);
+}
+
+.container-mobile-options{
+    display: none;
 }
 
 /* Responsive design */
@@ -270,5 +274,41 @@ footer .send:hover{
 
     aside{
         display: none;
+    }
+    .container-mobile-options{
+        background-color: var(--grey-500);
+        border-top: 1px solid var(--grey-600);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 4px;
+    }
+    .container-mobile-options .mobile-options p{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-mobile-options button{
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;
+        padding: 4px;
+        color: var(--grey-700);
+        transition: all .2s;
+    }
+    .container-mobile-options button:focus{
+        color: var(--grey-600);
+        box-shadow: -1px 16px 107px -32px rgba(92,92,92,1);
+        transform: translateY(-2px);
+    }
+    .container-mobile-options svg{
+        width: 100%;
+        height: 100%;
+    }
+    .container-mobile-options p{
+        color: var(--grey-700);
+        font-size: 10px;
     }
 }

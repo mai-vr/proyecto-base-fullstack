@@ -98,15 +98,44 @@
                 </div>
             </section>
             <footer>
-                <button class="attach">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701"><path fill="currentColor" d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129"/></svg>
-                </button>
-                <form>
-                    <input type="text" placeholder="Escribe un mensaje">
-                </form>
-                <button class="send">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M43 5L29.7 43l-7.6-17.1L5 18.3z"/><path stroke-linecap="round" d="M43 5L22.1 25.9"/></g></svg>
-                </button>
+                <div class="container-pc-message">
+                    <button class="attach">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701"><path fill="currentColor" d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129"/></svg>
+                    </button>
+                    <form>
+                        <input type="text" placeholder="Escribe un mensaje">
+                    </form>
+                    <button class="send">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M43 5L29.7 43l-7.6-17.1L5 18.3z"/><path stroke-linecap="round" d="M43 5L22.1 25.9"/></g></svg>
+                    </button>
+                </div>
+                <div class="container-mobile-options">                    
+                    <div class="mobile-options">
+                       <button class="call-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><path d="M21 22c-3.8 0-7.338-1.115-10.307-3.036a19.1 19.1 0 0 1-5.657-5.657A18.9 18.9 0 0 1 2 3h6.778L9.97 8.372l-2.024 2.024a15.07 15.07 0 0 0 5.657 5.657l2.024-2.025L21 15.223z"/><path stroke="currentColor" stroke-width="2" d="M21 22c-3.8 0-7.338-1.115-10.307-3.036a19.1 19.1 0 0 1-5.657-5.657A18.9 18.9 0 0 1 2 3h6.778L9.97 8.372l-2.024 2.024a15.07 15.07 0 0 0 5.657 5.657l2.024-2.025L21 15.223z"/></g></svg>
+                            <p>
+                                Calls
+                            </p>
+                        </button> 
+                    </div>
+                    <div class="mobile-options">
+                        <button class="chats-button">
+                            <svg class="chats-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21a9 9 0 1 0-9-9c0 1.44.338 2.8.94 4.007c.453.911-.177 2.14-.417 3.037a1.17 1.17 0 0 0 1.433 1.433c.897-.24 2.126-.87 3.037-.416A9 9 0 0 0 12 21"/></svg>
+                            <p>
+                                Chats
+                            </p>
+                        </button>
+                    </div>
+                    <div class="mobile-options">
+                        <button class="setting-button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="none"><path d="M9.408 4.96L10 2h4l.592 2.96c.81.299 1.556.733 2.207 1.276l2.861-.968l2 3.464l-2.268 1.993a7.5 7.5 0 0 1 0 2.55l2.268 1.993l-2 3.464l-2.861-.968a7.5 7.5 0 0 1-2.207 1.276L14 22h-4l-.592-2.96a7.5 7.5 0 0 1-2.207-1.276l-2.861.968l-2-3.464l2.268-1.993a7.6 7.6 0 0 1 0-2.55L2.34 8.732l2-3.464l2.861.968A7.5 7.5 0 0 1 9.408 4.96" clip-rule="evenodd"/><path d="M16 12a4 4 0 1 1-8 0a4 4 0 0 1 8 0"/><path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M9.408 4.96L10 2h4l.592 2.96c.81.299 1.556.733 2.207 1.276l2.861-.968l2 3.464l-2.268 1.993a7.5 7.5 0 0 1 0 2.55l2.268 1.993l-2 3.464l-2.861-.968a7.5 7.5 0 0 1-2.207 1.276L14 22h-4l-.592-2.96a7.5 7.5 0 0 1-2.207-1.276l-2.861.968l-2-3.464l2.268-1.993a7.6 7.6 0 0 1 0-2.55L2.34 8.732l2-3.464l2.861.968A7.5 7.5 0 0 1 9.408 4.96Z" clip-rule="evenodd"/><path stroke="currentColor" stroke-linecap="square" stroke-width="2" d="M16 12a4 4 0 1 1-8 0a4 4 0 0 1 8 0Z"/></g></svg>
+                            <p>
+                                Settings
+                            </p>
+                        </button>
+                    </div>
+
+                </div>
             </footer>
         </div>
    </section> 
