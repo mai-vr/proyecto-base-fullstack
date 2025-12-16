@@ -6,22 +6,24 @@
 }
 
 :root{  /*Paleta de colores con los que trabajaré.*/
-    --primary-color: #0a9c6f;
-    --grey-900: #0d1919;
-    --grey-800: #121b22;
-    --grey-600: #1f2c34;
-    --grey-700: #9f9fa1;
+    --primary-color: #6d5dfc;
+    --grey-900: #0b1020;
+    --grey-800: #0f1629;
+    --grey-600: #1a2440;
+    --grey-700: #9ea3b0;
     --grey-500: #dfdfe1;
     --grey-300: #fefff6;
     --grey-200: #f1f2f6;
-    --green-400: #138b80;
-    --green-300: #2dca7a;
-    --green-100: #dcf8c6;
+
+    --violet-400: #5a4fdc;
+    --violet-300: #8b7cff;
+    --violet-100: #e8e4ff;
+    
     --primary-font: "Roboto", sans-serif;
 }
 
 body{
-    background: linear-gradient(var(--green-400), var(--green-100));
+    background: linear-gradient(var(--violet-400), var(--grey-600));
     padding: 40px;
 }
 
@@ -133,7 +135,7 @@ aside header{
 .user-chat:hover{
     background-color: var(--grey-800);
     cursor: pointer;
-    border-left: 3px solid var(--green-300);
+    border-left: 3px solid var(--violet-300);
 }
 
 /* Messages panel */
@@ -189,7 +191,7 @@ aside header{
 
 .me{
     align-self: end; /* Propiedad para elementos hijos de un contenedor flexible. */
-    background-color: var(--green-100);
+    background-color: var(--violet-100);
 }
 
 /* Footer styles */
@@ -245,7 +247,7 @@ footer .container-pc-message input:focus{
 }
 
 footer .container-pc-message .send{
-    background-color: var(--green-400);
+    background-color: var(--violet-400);
     border: none;
     color: var(--grey-300);
     width: 45px;
@@ -257,7 +259,7 @@ footer .container-pc-message .send{
 }
 
 footer .container-pc-message .send:hover{
-    background-color: var(--green-300);
+    background-color: var(--violet-300);
     transform: scale(1.1);
 }
 
@@ -319,5 +321,6 @@ footer .container-pc-message .send:hover{
         background-color: var(--grey-200);
         border-radius: 20%;
         color: var(--grey-600);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.112);
     }
 }
