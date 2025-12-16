@@ -24,10 +24,11 @@ Luego, hay que abrir index.html en cualquier navegador. Para esto, es necesario 
 
 **Paleta de colores** Se optó por colores fríos como violeta, azul y distintos tonos de grises para mantener una estética simple que mejore la legibilidad.
 
-**Tipografía:** Se eligió la fuente 'Roboto' ya que es sencilla, tiene un diseño prolijo y permite mantener una chorencia visual en la página.
+**Tipografía:** Se eligió la fuente 'Roboto' ya que es sencilla, tiene un diseño prolijo y permite mantener una coherencia visual en la página.
 
 **Responsive design:** El diseño se pensó con un enfoque responsive utilizando flexbox, grids y unidades relativas para la página se adapte a las distintas pantallas.
 
+**Organización de los estilos:** Los estilos se organizaron partiendo de lo más general a lo más específico para cada elemento de la página. Primeramente, se definieron variables globales con colores y la tipografía para facilitar su reutilización. Luego, las propiedades CSS se definieron siguiendo un orden lógico: primero los estilos generales, después los elementos, los componentes y por último los estados.
 
 ---
 ## Tecnologías utilizadas
