@@ -1,7 +1,13 @@
 # Maquetación UI - clon de Whatsapp
-## Interfaz de mensajería maquetada con HTML y CSS
 
-Este proyecto consiste en la maquetación de una interfaz de mensajería, estilo Whatsapp. La misma cuenta con una barra lateral con los distintos contactos del usuario y un panel con la conversación en donde se pueden ver mensajes recibidos y enviados. Para la realización de este proyecto unicamente se utilizó HTML para la estructura base y CSS para agregar estilos.
+Este proyecto consiste en la maquetación de una interfaz de mensajería, estilo Whatsapp. La misma cuenta con una barra lateral con los distintos contactos del usuario y un panel con la conversación en donde se pueden ver mensajes recibidos y enviados. 
+
+## Tecnologías utilizadas
+- HTML5: Para la estructura y marcado del contenido
+- CSS: Estilos y diseño de la interfaz
+- Imágenes: Fotos de perfil de los contactos
+
+Las herramientas utilizadas para el proyecto fueron unicamente aquellas aprendidas durante la primera parte del curso. Sin embargo, a futuro será posible incorporar nuevas, como JavaScript.
 
 ---
 ## Estructura del proyecto
@@ -29,12 +35,6 @@ Luego, hay que abrir index.html en cualquier navegador. Para esto, es necesario 
 **Responsive design:** El diseño se pensó con un enfoque responsive utilizando flexbox, grids y unidades relativas para la página se adapte a las distintas pantallas.
 
 **Organización de los estilos:** Primeramente, se definieron variables globales con colores y la tipografía para facilitar su reutilización. Luego, las propiedades CSS se definieron siguiendo un orden lógico: primero los estilos generales, después los elementos, los componentes y por último los estados.
-
----
-## Tecnologías utilizadas
-- HTML5: Para la estructura y marcado del contenido
-- CSS: Estilos y diseño de la interfaz
-- Imágenes: Fotos de perfil de los contactos
 
 ---
 ## Trabajo con git
