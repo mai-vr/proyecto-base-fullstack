@@ -28,10 +28,14 @@ Luego, hay que abrir index.html en cualquier navegador. Para esto, es necesario 
 
 **Responsive design:** El diseño se pensó con un enfoque responsive utilizando flexbox, grids y unidades relativas para la página se adapte a las distintas pantallas.
 
-**Organización de los estilos:** Los estilos se organizaron partiendo de lo más general a lo más específico para cada elemento de la página. Primeramente, se definieron variables globales con colores y la tipografía para facilitar su reutilización. Luego, las propiedades CSS se definieron siguiendo un orden lógico: primero los estilos generales, después los elementos, los componentes y por último los estados.
+**Organización de los estilos:** Primeramente, se definieron variables globales con colores y la tipografía para facilitar su reutilización. Luego, las propiedades CSS se definieron siguiendo un orden lógico: primero los estilos generales, después los elementos, los componentes y por último los estados.
 
 ---
 ## Tecnologías utilizadas
 - HTML5: Para la estructura y marcado del contenido
 - CSS: Estilos y diseño de la interfaz
 - Imágenes: Fotos de perfil de los contactos
+
+---
+## Trabajo con git
+El repositorio contiene actualizaciones frecuentes sobre los cambios y correcciones que se fueron realizando a lo largo del proyecto para documentar cada parte del proceso.
