@@ -99,7 +99,7 @@ aside header{
     padding: 10px;
 }
 
-.search form input{
+.search input{
     background-color: var(--grey-600);
     width: 100%;
     display: block;
@@ -138,6 +138,13 @@ aside header{
     background-color: var(--grey-800);
     cursor: pointer;
     border-left: 3px solid var(--violet-300);
+}
+
+.empty{
+    text-align: center;
+    color: (var(--violet-100));
+    padding: 10px;
+    font-size: 16px;
 }
 
 /* Messages panel */

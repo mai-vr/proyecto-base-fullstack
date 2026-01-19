@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clon de whatsapp</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
     <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,33 +31,11 @@
                 </div>
             </header>
             <div class="search">
-                <form>    <!--Incluir el input dentro del form hace que cargue el sumbit, lo q se envía.-->
-                    <input type="search" placeholder="Busca un chat o iniciar uno nuevo">
-                </form>
+                <input id="search" type="search" placeholder="Busca un chat o iniciar uno nuevo" autocomplete="off">
             </div>
             <section class="chats">
                 <ul>
-                    <li class="user-chat">
-                        <img src="assets/fotodeperfilgato.webp" alt="">
-                        <div>
-                            <h3>Maria Sandoval</h3>
-                            <p>Dale, perfecto</p> 
-                        </div>
-                    </li>
-                    <li class="user-chat">
-                        <img src="assets/fotodeperfil.webp" alt="">
-                        <div>
-                            <h3>Andres Gonzalez</h3>
-                            <p>Vuelvo en 5</p> 
-                        </div>
-                    </li>
-                    <li class="user-chat">
-                        <img src="assets/fotodeperfilgato2.webp" alt="">
-                        <div>
-                            <h3>Tomas Alvarez</h3>
-                            <p>Es el martes a las 20:00</p> 
-                        </div>
-                    </li>
+                    <!-- Los chats se definen en 'main.js' -->
                 </ul>
             </section>
         </aside>
@@ -70,80 +48,15 @@
                 </div>
             </header>
             <section class="messages">
-                <div class="message you">   <!--Cada mensaje será un div-->
-                    <!--Un div con dos clases: la clase mensaje estila a todos de una forma 'base'. 
-                    Luego, según quién lo haya enviado va a tener un color de fondo diferente.-->
-                    <p class="content">
-                        Hola! Como estas?
-                    </p>
-                    <p class="time">
-                        14:15
-                    </p>
-                </div>
-                <div class="message me">   
-                    <p class="content">
-                        Todo bien y vos?
-                    </p>
-                    <p class="time">
-                        14:20
-                    </p>
-                </div>
-                <div class="message you">   
-                    <p class="content">
-                        Bien bien, gracias
-                    </p>
-                    <p class="time">
-                        14:25
-                    </p>
-                </div>
-                <div class="message you">   
-                    <p class="content">
-                        Vamos por un café?
-                    </p>
-                    <p class="time">
-                        14:26
-                    </p>
-                </div>
-                <div class="message me">   
-                    <p class="content">
-                        Si, buenisimo
-                    </p>
-                    <p class="time">
-                        14:27
-                    </p>
-                </div>
-                <div class="message me">   
-                    <p class="content">
-                        En donde nos vemos?
-                    </p>
-                    <p class="time">
-                        14:27
-                    </p>
-                </div>
-                <div class="message you">   
-                    <p class="content">
-                        Podemos ir a un cafe en el centro, nos vemos en la plaza y vamos
-                    </p>
-                    <p class="time">
-                        14:30
-                    </p>
-                </div>
-                <div class="message me">   
-                    <p class="content">
-                        Dale, perfecto!
-                    </p>
-                    <p class="time">
-                        14:35
-                    </p>
-                </div>
+                <!-- Definidos en el archivo JS 'handleMessages'. -->
             </section>
             <footer>
                 <div class="container-pc-message">
                     <button class="attach">
                         <svg xmlns="http://www.w3.org/2000/svg" width="131.11" height="128" viewBox="0 0 718 701"><path fill="currentColor" d="m175 397l280-280c3-3 27-27 65-40c53-17 107-3 150 40c44 43 57 96 40 149c-12 38-37 64-40 67L369 634c-52 52-182 119-302 0c-119-119-51-250 0-301L390 9c12-12 31-12 43 0s12 31 0 43L111 376c-5 4-106 109 0 215c103 103 204 11 215 0l301-302s17-17 25-41c10-32 3-60-25-88c-60-60-118-10-129 0L218 439c-10 10-17 27 0 44s33 9 43 0l194-194c12-11 32-11 43 0c12 12 12 32 0 44L304 526c-27 26-82 47-129 0c-48-47-27-103 0-129"/></svg>
                     </button>
-                    <form>
-                        <input type="text" placeholder="Escribe un mensaje">
+                    <form id="form-message">
+                        <input autocomplete="off" id="message" type="text" placeholder="Escribe un mensaje">
                     </form>
                     <button class="send">
                         <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4"><path d="M43 5L29.7 43l-7.6-17.1L5 18.3z"/><path stroke-linecap="round" d="M43 5L22.1 25.9"/></g></svg>
@@ -175,5 +88,7 @@
             </footer>
         </div>
    </section> 
+   <script src="./src/app/main.js"></script>
+   <script src="./src/app/handleMessages.js"></script>
 </body>
 </html>
