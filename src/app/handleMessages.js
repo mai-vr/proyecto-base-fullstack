@@ -2,7 +2,7 @@ const $listMessages = document.querySelector(".messages")
 const $message = document.getElementById("message")
 const $formMessage = document.getElementById("form-message")
 
-const messages = [
+let messages = [
     {
         id: 1,
         text: "Hola! Qué tal?",
@@ -29,10 +29,23 @@ const messages = [
     }
 ]
 
-const renderMessages = (list) => {
+const loadChats = () => {
+    const data = JSON.parse(localStorage.getItem("messages"))
+    if (data === null){
+        return messages
+    }
+    return data 
+}
+
+const saveChats = (listOfMessages) => {
+    localStorage.setItem("messages", JSON.stringify(listOfMessages))
+}
+
+const renderMessages = (listOfMessages) => {
     $listMessages.innerHTML = ""
 
-    list.forEach((message) => {
+    listOfMessages.forEach((message) => { // El '+=' concatena con lo último que se agregó.
+        // Pregunto si agregar la clase 'me' definida en el CSS con ciertos estilos.
         $listMessages.innerHTML += `
         <div class="message ${message.me ? 'me' : ''}">
             <p class="content">
@@ -54,10 +67,18 @@ const sendMessage = (event) => {
             me: true,
             hour: now.getHours() + ":" + now.getMinutes()
         }
-        console.log(newMessage)
-    } else {
-        console.log("Precionaste la tecla", event.key)
-    }
+        
+        // messages.push(newMessage)
+        // Persistir info. para guardar los cambios.
+        
+        const messagesInLS = loadChats()
+        // Spread operator.
+        messages = [...messagesInLS, newMessage]
+
+        saveChats(messages)
+        renderMessages(messages)
+        $formMessage.reset()
+    } 
 }
 
 // 'keydown' es apretar enter.
@@ -65,5 +86,5 @@ $message.addEventListener("keydown", (e) => {
     sendMessage(e)
 })
 
-$formMessage.addEventListener("submit", sendMessage)
-renderMessages(messages)
+const initialMessages = loadChats()
+renderMessages(initialMessages)
